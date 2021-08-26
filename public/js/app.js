@@ -1,5 +1,4 @@
 //this is for fetching forecast
-console.log("Client side JavaScript file is loaded");
 
 //http requrest: use fetch api
 //use then method
