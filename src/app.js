@@ -5,6 +5,8 @@ const hbs = require("hbs");
 const app = express();
 const geoCode = require("./utils/geocode");
 const weatherCode = require("./utils/forecast");
+//set on heroku's port and local 3000:
+const port = process.env.PORT || 3000;
 
 //argv
 // const address = process.argv[2];
@@ -132,6 +134,6 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
-  console.log("Server is up on port 3000");
+app.listen(port, () => {
+  console.log("Server is up on port" + port);
 });
